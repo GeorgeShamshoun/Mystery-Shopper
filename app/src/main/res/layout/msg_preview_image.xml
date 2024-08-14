@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/b_g_white_card"
+    android:layout_gravity="center"
+    android:layout_marginStart="16.5dp"
+    android:layout_marginEnd="16.5dp"
+    app:layout_constraintCircleRadius="12dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_margin="16dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/msg_image"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.81dp"
+        android:fontFamily="@font/avant_garde_demi"
+        android:gravity="center_horizontal"
+        android:text="Preview Attachment"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_image_done"
+        android:layout_width="match_parent"
+        android:layout_height="34.38dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/item_btn_background_1"
+        android:fontFamily="@font/avant_garde_book"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

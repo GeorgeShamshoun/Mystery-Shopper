@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_screen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".Activity.JobDetailsActivity">
+
+    <ImageView
+        android:id="@+id/img_background_3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_3" />
+
+    <TextView
+        android:id="@+id/txt_job_details_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43.53dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/avant_garde_book"
+        android:onClick="onclick"
+        android:text="Job Details"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_job_details_back"
+        android:layout_width="7.53dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="59.5dp"
+        android:onClick="onclick"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow_1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        app:cardBackgroundColor="#7B5AA5"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_background_3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/avant_garde_book"
+            android:gravity="start"
+            android:text="WE Store"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_calender_a"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="87dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/calendar_2" />
+
+        <TextView
+            android:id="@+id/txt_job_date"
+            style="AvantGarde Bk BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="21dp"
+            android:gravity="start"
+            android:text="00/00/0000"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/img_calender_a"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/avant_garde_demi"
+        android:text="Branch Details"
+        android:textColor="@color/secondary_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_d_visit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_branch_name"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/branch_name" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/avant_garde_demi"
+                    android:text="Branch Name"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/img_branch_name"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_branch_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/avant_garde_book"
+                    android:gravity="start"
+                    android:text="Name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_branch_name" />
+
+                <TextView
+                    android:id="@+id/txt_branch_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avant_garde_book"
+                    android:gravity="start"
+                    android:text="Address"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_branch_name" />
+
+                <ImageView
+                    android:id="@+id/img_branch_map"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="onclick"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_branch_address"
+                    app:srcCompat="@drawable/map" />
+
+                <TextView
+                    android:id="@+id/txt_view_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="View Location"
+                    android:textColor="#5C2D91"
+                    android:textSize="10dp"
+                    android:onClick="onclick"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintStart_toEndOf="@+id/img_branch_map"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_branch_address" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="#5C2D91"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_view_location"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_view_location"
+                    app:layout_constraintStart_toStartOf="@+id/txt_view_location" />
+
+                <ImageView
+                    android:id="@+id/img_branch_type"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="36dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_branch_map"
+                    app:srcCompat="@drawable/branch_type" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/avant_garde_demi"
+                    android:text="Branch Type"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/img_branch_type"
+                    app:layout_constraintTop_toBottomOf="@+id/img_branch_map" />
+
+                <TextView
+                    android:id="@+id/txt_branch_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/avant_garde_book"
+                    android:gravity="start"
+                    android:text="Type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_branch_type" />
+
+
+                <ImageView
+                    android:id="@+id/img_branch_phone"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="36dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_branch_type"
+                    app:srcCompat="@drawable/branch_phone" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/avant_garde_demi"
+                    android:text="Branch Phone"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/img_branch_phone"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_branch_type" />
+
+                <TextView
+                    android:id="@+id/txt_branch_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="clip_vertical"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/avant_garde_book"
+                    android:gravity="start"
+                    android:text="00000000000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_branch_phone" />
+
+                <ImageView
+                    android:id="@+id/img_branch_working"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="36dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_branch_phone"
+                    app:srcCompat="@drawable/branch_clock" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="36dp"
+                    android:fontFamily="@font/avant_garde_demi"
+                    android:text="Working Hours"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/img_branch_working"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_branch_phone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_working_hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="10dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_branch_working"
+                    tools:listitem="@layout/item_working_hours" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_d_visit"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/item_btn_background_2"
+        android:fontFamily="@font/avant_garde_book"
+        android:text="Decline Visit"
+        android:onClick="onclick"
+        android:inputType="text"
+        android:textColor="@color/secondary_color"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_a_visit"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/item_btn_background_1"
+        android:fontFamily="@font/avant_garde_book"
+        android:inputType="text"
+        android:onClick="onclick"
+        android:text="Accept Visit"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_d_visit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

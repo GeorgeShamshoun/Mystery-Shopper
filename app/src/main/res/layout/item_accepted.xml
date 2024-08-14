@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="17dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="17dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/item_accepted_background">
+
+    <TextView
+        android:id="@+id/txt_branch_a_name"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/avant_garde_demi"
+        android:gravity="start"
+        android:text="Branch Name"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_branch_a_address"
+        style="AvantGarde Bk BT"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="6dp"
+        android:gravity="start"
+        android:text="Branch Address"
+        android:textColor="#595959"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_branch_a_name" />
+
+    <TextView
+        android:id="@+id/txt_visit_a_date"
+        android:fontFamily="@font/avant_garde_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="00/00/0000"
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/img_calender_a"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_a_item"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/item_btn_background_2"
+        android:fontFamily="@font/avant_garde_book"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="Resume Visit"
+        android:textColor="@color/primary_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_branch_a_address" />
+
+    <ImageView
+        android:id="@+id/img_calender_a"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calendar_2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

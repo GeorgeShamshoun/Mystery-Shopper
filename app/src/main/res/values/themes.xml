@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.MysteryShopper" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary" >@color/primary_color</item>
+
+        <item name="colorPrimaryDark" >@color/primary_color</item>
+    </style>
+
+    <style name="CalenderViewCustom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/primary_color</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>  // color of date selected.
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/b_g_white_card</item>
+
+    </style>
+
+        <style name="MySpinnerLook" parent="@android:style/Widget.TextView.SpinnerItem">
+            <item name="android:textSize">24sp</item>
+        </style>
+
+
+    <style name="ThemeMaterialCalender" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="android:windowFullscreen">false</item>
+        <item name="color">@color/secondary_color</item>
+    </style>
+</resources>

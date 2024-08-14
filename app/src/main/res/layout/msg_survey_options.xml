@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="319dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/b_g_white_card"
+    android:layout_gravity="bottom"
+    app:layout_constraintCircleRadius="12dp">
+
+    <TextView
+        android:id="@+id/txt_survey_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.81dp"
+        android:fontFamily="@font/avant_garde_demi"
+        android:gravity="center_horizontal"
+        android:text="Survey Options"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/white"
+        android:inputType="text"
+        android:textSize="14dp"
+        android:fontFamily="@font/avant_garde_book"
+        android:stateListAnimator="@null"
+        android:text="Delete &amp; Exit"
+        android:textColor="#E70707"
+        android:paddingStart="175dp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_survey_options" />
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@drawable/delete"
+        android:layout_marginStart="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_delete"
+        app:layout_constraintStart_toStartOf="@+id/btn_delete"
+        app:layout_constraintTop_toTopOf="@+id/btn_delete" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:inputType="text"
+        android:fontFamily="@font/avant_garde_book"
+        android:stateListAnimator="@null"
+        android:text="Save And Exit"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:paddingStart="175dp"
+        android:gravity="center_vertical|start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_delete" />
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@drawable/save_survey"
+        android:layout_marginStart="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toTopOf="@+id/btn_save" />
+
+    <Button
+        android:id="@+id/btn_Preview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="175dp"
+        android:gravity="center_vertical|start"
+        android:background="@color/white"
+        android:fontFamily="@font/avant_garde_book"
+        android:inputType="text"
+        android:stateListAnimator="@null"
+        android:text="Preview"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@drawable/preview_survey"
+        android:layout_marginStart="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_Preview" />
+
+    <Button
+        android:id="@+id/btn_cancel_survey"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/item_btn_background_2"
+        android:fontFamily="@font/avant_garde_book"
+        android:gravity="center"
+        android:inputType="text"
+        android:stateListAnimator="@null"
+        android:text="Cancel"
+        android:textColor="@color/secondary_color"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Preview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_screen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".Activity.HomePageActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_home_page" />
+
+    <TextView
+        android:id="@+id/txt_good_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/avant_garde_book"
+        android:text="Have A Good Day,"
+        android:textColor="@color/home_page_text1"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/avant_garde_demi"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/txt_good_day" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="122dp"
+        android:fontFamily="@font/avant_garde_book"
+        android:text="My Visits"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_schedules"
+            android:layout_width="150dp"
+            android:layout_height="105dp"
+            android:onClick="onclick"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/schedules" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/avant_garde_book"
+                android:text="Scheduled"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txt_v_schedules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="0 Visits"
+                android:textColor="@color/home_page_text2"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="83dp"
+                app:srcCompat="@drawable/aroow_home_page" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_accepted"
+            android:layout_width="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_height="105dp"
+            android:onClick="onclick"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/accepted" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/avant_garde_book"
+                android:text="Accepted"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txt_v_cv_accepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="0 Visits"
+                android:textColor="@color/home_page_text2"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="83dp"
+                app:srcCompat="@drawable/aroow_home_page" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_inporgress"
+            android:layout_width="150dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="125dp"
+            android:onClick="onclick"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/inporgress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/avant_garde_book"
+                android:text="In Progress"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txt_v_inporgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="0 Visits"
+                android:textColor="@color/home_page_text2"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="83dp"
+                app:srcCompat="@drawable/aroow_home_page" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_returned"
+            android:layout_width="150dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="onclick"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/returned" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/avant_garde_book"
+                android:text="Returned"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txt_v_returned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="0 Visits"
+                android:textColor="@color/home_page_text2"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="83dp"
+                app:srcCompat="@drawable/aroow_home_page" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_notification"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="66dp"
+        android:alpha="0.15"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_notification"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="4dp"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toEndOf="@id/cv_notification"
+        app:layout_constraintTop_toTopOf="@+id/cv_notification"
+        app:srcCompat="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/txt_notification"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="3dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="6sp"
+        app:layout_constraintEnd_toEndOf="@id/img_notification"
+        app:layout_constraintTop_toTopOf="@+id/img_notification" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_logout"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="18dp"
+        android:alpha="0.25"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_logout"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="4dp"
+        app:layout_constraintEnd_toEndOf="@id/cv_logout"
+        app:layout_constraintTop_toTopOf="@id/cv_logout"
+        android:onClick="onclick"
+        app:srcCompat="@drawable/logout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

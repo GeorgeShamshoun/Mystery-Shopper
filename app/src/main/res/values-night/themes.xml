@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.MysteryShopper" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@color/primary_color</item>
+        <item name="colorPrimaryDark" >@color/primary_color</item>
+    </style>
+
+</resources>
